@@ -1,5 +1,10 @@
 <?php
-include 'conexion.php';
+$host = "localhost";
+$usuario = "root";
+$contrasena = "";
+$base_de_datos = "negocio";
+
+$conexion = mysqli_connect($host, $usuario, $contrasena, $base_de_datos);
 $nombre=$_POST['nombre'];
 
 $precio=$_POST['precio'];
